@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Html Assignment1</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+
+            body {
+                background-color: #fed966;
+                margin: auto;
+                width: 1024px;
+                border: 1px solid black;
+                border-right: none;
+            }
+
+            /* Style the top navigation bar */
+            .topnav {
+                display: flex;
+                align-items: stretch;
+                overflow: hidden;
+                background-color: #ea700d;
+                border: 1px solid black;
+                width: 1024px;
+                border-right: none;
+            }
+
+            .site-name {
+                color: black;
+                background-color: #ea700d;
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+                padding: 10px 50px 10px 5px;
+                justify-content: left;
+                width: 225px;
+                border-right: none;
+            }
+
+            .minu {
+                display: block;
+                color: black;
+                border: 1px solid black;
+                border-bottom: none;
+                border-top: none;
+                text-align: center;
+                padding: 20px 50px 10px 50px;
+                text-decoration: none;
+                background-color: #32849c;
+            }
+
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .container{
+                height:1024px;
+                width:1024px;
+            }
+
+            .content {
+                float: left;
+                background-color: #fed966;
+                padding: 10px;
+                height: 100%;
+            }
+
+            .content-main-header {
+                align-items: center;
+                text-align: center;
+                background-color: #dde2cc;
+                height: 100px;
+                width: 300px;
+                padding: 20px;
+                border: 1px solid black;
+            }
+
+            .content-sub-header {
+                background-color: #dde2cc;
+                height: 200px;
+                width: 600px;
+                padding: 20px;
+                border: 1px solid black;
+                text-align: center;
+            }
+
+            .subheder-articles {
+                float: left;
+            }
+
+            .content-table:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            @media (max-width: 600px) {
+                .content-table article {
+                    width: 100%;
+                }
+            }
+
+            .content-table article {
+                float: left;
+                width: 33.33%;
+                padding: 40px;
+                height: 300px;
+                background-color: #dde2cc;
+                border: 1px solid black;
+                text-align: center;
+            }
+
+            aside {
+                float: right;
+                padding: 30px;
+                background-color: #c3d69f;
+                height: 100%;
+                border: 1px solid black;
+                border-bottom: none;
+                border-top: none;
+            }
+
+            .content-side-content {
+                background-color: #dde2cc;
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .footer {
+                clear: both;
+                background-color: #7030a0;
+                text-align: center;
+                padding: 10px;
+                border: 1px solid black;
+                border-left: none;
+                border-right: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="#" class="site-name">Site Name</a>
+            <a href="#" class="minu">Minu item 1</a>
+            <a href="#" class="minu">Minu item 2</a>
+            <a href="#" class="minu">Minu item 3</a>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h2 class="content-main-header">Main header</h2>
+                <div class="subheder-articles">
+                    <p class="content-sub-header">Sub header + text.</p>
+                    <div class="content-table">
+                        <article>Article1</article>
+                        <article style="float:right;">Article2</article>
+                    </div>
+                </div>
+            </div>
+            <aside>
+                <div class="content-side-content">Side content</div>
+            </aside>
+        </div>
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+
+    </body>
+    </html>
+
+
